@@ -14,11 +14,12 @@
     
     <script>
         const heading = React.createElement("h1", {id: "title"}, "Hello World!");
-        // const paragraph = React.createElement("p",{}, "Namaste React")
+        const paragraph = React.createElement("p",{id: "paragraph"}, "Namaste React Developers.");
+        const container = React.createElement("div", {id: "container"}, [heading, paragraph])
 
         const root = ReactDOM.createRoot(document.getElementById("root"));
 
-        root.render(heading);
+        root.render(container);
 
     </script>
 
